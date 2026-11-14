@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores de Colombia | Mini Portal</title>
+    <meta name="description" content="Descubre los platos típicos de Colombia: nombre, descripción, departamento de origen e imagen, con datos de la API oficial de Colombia.">
+    <meta name="theme-color" content="#0b2545">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/utils.js" defer></script>
+    <script src="../js/sabores.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>🍲 Sabores de Colombia</h1>
+        <nav>
+            <a href="../index.html" class="nav-link">⬅ Volver al Inicio</a>
+            <a href="departamentos.html" class="nav-link">Ir a Departamentos ➡</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="stats-container" class="stats-box">
+            <h2>Información Gastronomica</h2>
+            <p class="stats-total">Total de platos típicos registrados: <span id="total-platos">Cargando...</span></p>
+        </section>
+
+        <h2 class="section-title">Platos tipicos</h2>
+
+        <div id="loading" class="loading-msg" role="status">
+            <div class="spinner" aria-hidden="true"></div>
+            <p>Cargando platos tipicos... por favor espere.</p>
+        </div>
+        <div id="error-container" class="error-msg" role="alert" hidden></div>
+
+        <section id="dishes-grid" class="grid-container" aria-label="Platos típicos de Colombia"></section>
+    </main>
+
+    <footer>
+        <p>Desarrollado para la actividad académica con la API de Colombia.</p>
+    </footer>
+</body>
+</html>
